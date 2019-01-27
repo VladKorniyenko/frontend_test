@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+*{
+    margin: 0;
+    padding: 0;
+}
+        body {
+        font: 14px 'Verdana';
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        background-color: #a0f;
+        padding-left: 25%;
+}
+    ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+    .menu_item{
+        list-style: none;
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .menu>li>a{
+        padding: 5px;
+        width: 150px;
+        color: #fff;
+        background-color: #a0f;
+        text-decoration: none;
+        display: block;
+            }
+
+    @media (max-width:1500px) {
+    .menu>li>a{
+        width: 130px;
+    }
+}
+    @media (max-width:1400px) {
+    .menu>li>a{
+        width: 120px;
+    }
+}
+    @media (max-width:1224px) {
+    .menu>li>a{
+        width: 110px;
+    }
+}
+    @media (max-width:1024px) {
+    .menu>li>a{
+        width: 90px;
+    }
+}
+    @media (max-width:724px) {
+    .menu>li>a{
+        width: 70px;
+    }
+}
+
+    .menu>li>a:hover{
+        color: #ff0;
+        background-color: #fa0;
+        /* transition: background-color 0.25s, color 0.15s; */
+    }
+    .submenu{
+        position: absolute;
+        left: 0px;
+        top: 27px;
+    }
+    .submenu>li{
+        list-style: none;
+        /* opacity: 0; */
+        transition: height 0.3s/*, opacity 0.1s*/;
+        height: 0px;
+    }
+    .submenu>li>a{
+        width: 150px;
+        padding: 5px;
+        background-color: #777;
+        color: #fff;
+        display: none;
+        height: inherit;
+        transition: background-color linear 0.5s;   /*задержать фон для подменю на 0.5 сек*/
+    }
+    .submenu>li>a:hover{
+        color: #ff0;
+        background-color: #fa0;
+        transition: background-color 0.5s;
+        /* border: 1px solid #000; */
+    }
+.menu>li:hover > .submenu>li>a{
+    display: block;
+    /* opacity: 1; */
+}
+.menu>li:hover > .submenu>li{
+    /* opacity: 1; */
+    height: 20px;
+    margin: 0px 0px 10px;
+}
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu_item"><a href=#>Menu 1</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+            <li><a href=#>Sudmenu 1</a></li>
+        </ul>
+    </li>
+    <li class="menu_item"><a href=#>Menu 2</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+            <li><a href=#>Sudmenu 2</a></li>
+        </ul>
+    </li>
+    <li class="menu_item"><a href=#>Menu 3</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+            <li><a href=#>Sudmenu 3</a></li>
+        </ul>
+    </li>
+    <li class="menu_item"><a href=#>Menu 4</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+            <li><a href=#>Sudmenu 4</a></li>
+        </ul>
+    </li>
+    <li class="menu_item"><a href=#>Menu 5</a>
+        <ul class="submenu">
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+            <li><a href=#>Sudmenu 5</a></li>
+        </ul>
+    </li>
+</ul>
+<div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
